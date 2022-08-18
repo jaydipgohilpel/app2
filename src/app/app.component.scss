@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$bgColor: #10ac84;
+$color: white;
+
+@mixin comancode($para) {
+  font-size: 1rem+2rem;
+  letter-spacing: $para;
+  text-transform: capitalize;
+  color: palevioletred;
+}
+
+.mainHeader {
+  height: 48vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $bgColor;
+  color: $color;
+
+  h1 {
+
+    @include comancode(0.8rem);
+
+    &:hover {
+      color: rgb(170, 71, 41);
+    }
+
+    &:after {
+      content: " Jaydip Gohil";
+    }
+
+  }
+
+
+
+  p {
+
+    @include comancode(0.3rem);
+
+    &:hover {
+      color: rgb(112, 181, 216);
+
+    }
+
+  }
+
+
+}
+
+html {
+  font-size: 62.5%;
+}

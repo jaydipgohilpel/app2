@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app2';
+  name = "";
+  parentcomponent(data:any="") {
+    console.warn(data);
+    this.name = data.name;
+  }
+
 }
